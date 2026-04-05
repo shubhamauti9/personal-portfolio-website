@@ -1,0 +1,172 @@
+/**
+ * Hero Styles 
+ */
+
+.hero-section {
+  padding-top: 140px;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hero-card {
+  display: flex;
+  align-items: center;
+  gap: 74px;
+  padding: 50px 60px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-greeting {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-name {
+  font-family: 'Special Elite', cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.hero-title {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+.hero-tagline {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 24px;
+  max-width: 440px;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--mid-gray);
+}
+
+@media (max-width: 800px) {
+  .hero-section {
+    padding-top: 100px;
+    min-height: auto;
+  }
+
+  .hero-card {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 32px 24px;
+  }
+
+  .hero-name {
+    font-size: 2.2rem;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .hero-tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-image {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 1.8rem;
+  }
+}
+
+/* Email Modal */
+.email-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.email-modal {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  animation: modalFadeIn 0.3s ease;
+}
+
+.email-modal h3 {
+  font-family: 'Special Elite', cursive;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.email-box {
+  background: var(--off-white);
+  padding: 16px;
+  border-radius: 8px;
+  margin: 16px 0 24px;
+  border: 1px dashed var(--mid-gray);
+  word-break: break-all;
+  font-size: 1.1rem;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

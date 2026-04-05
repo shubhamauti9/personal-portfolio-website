@@ -1,0 +1,46 @@
+/* ===== Education / Timeline Styles ===== */
+
+/* We use a shared timeline style that can be reused by Experience */
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.timeline-card {
+  padding: 28px 32px;
+}
+
+.timeline-year {
+  display: inline-block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-light);
+  margin-bottom: 8px;
+  background: var(--light-gray);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.timeline-card h3 {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.timeline-card .institution {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.timeline-card p:last-child {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}

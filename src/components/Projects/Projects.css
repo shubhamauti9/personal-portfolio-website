@@ -1,0 +1,77 @@
+/* ===== Projects Styles ===== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.project-header h3 {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+.project-links a {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-light);
+  border: 1px solid var(--mid-gray);
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: all var(--transition);
+}
+
+.project-links a:hover {
+  background: var(--text);
+  color: var(--white);
+  border-color: var(--text);
+  opacity: 1;
+}
+
+.project-card > p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: var(--light-gray);
+  color: var(--text-light);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

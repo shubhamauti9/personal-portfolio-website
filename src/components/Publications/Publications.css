@@ -1,0 +1,55 @@
+/* ===== Publications Styles ===== */
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.publication-card {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.pub-year {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.1rem;
+  color: var(--text-light);
+  min-width: 60px;
+  padding-top: 4px;
+}
+
+.pub-content h3 {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.pub-authors {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.pub-venue {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.pub-link {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .publication-card {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
